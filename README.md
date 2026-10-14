@@ -1,19 +1,27 @@
 # Pétalos de Reinicio
 
-**Sauce Solitario · Godot 4.2+ · Android y PC**
+**Sauce Solitario · RPG narrativo por turnos · Android y PC**
 
-Este branch se reutilizó para el desarrollo de **Pétalos de Reinicio**, un RPG por turnos de cinco actos con rutas Pacifista, Neutral, Genocida y Secreta.
+Este branch contiene el prototipo web de **Pétalos de Reinicio**, adaptado para desarrollarse y probarse desde un teléfono. La versión web usa HTML, CSS y JavaScript nativos; no requiere instalar Godot ni compilar para probar el prototipo.
 
-## Proyecto Godot
-Abre la carpeta [PetalosDeReinicio](PetalosDeReinicio/) como proyecto en Godot Project Manager seleccionando `PetalosDeReinicio/project.godot`.
+## Empezar desde el celular
+- [Abrir el prototipo web](PetalosDeReinicio/web/index.html)
+- [Instrucciones de la versión web](PetalosDeReinicio/web/README.md)
+- [Flujo de trabajo Canva + GitHub móvil](PetalosDeReinicio/docs/FLUJO_CANVA_GITHUB_MOVIL.md)
+- [Fichas visuales para el Acto 1](PetalosDeReinicio/docs/FICHAS_CANVA_ACTO_1.md)
+- [Plan narrativo de los cinco actos](PetalosDeReinicio/docs/PLAN_ACTOS.md)
 
-## Acto 1 — Jardín de Cobre
-- Movimiento de Nilo con WASD/flechas y botones táctiles.
-- Diálogos con Tic y Vera.
-- Primer combate contra Lenteja: LUCHAR, ACTUAR, OBJETO, PERDONAR y HUIR.
-- Estadísticas y guardado JSON en `user://petalos_save.json`.
-- Escenario y sprites temporales dibujados por código.
+## Qué funciona en el prototipo web
+- Menú principal y navegación responsive para móvil y escritorio.
+- Mapa exploratorio 2D dibujado en Canvas, con Vera y controles táctiles/teclado.
+- Flor coleccionable, inventario y estadísticas.
+- Encuentro con Lenteja y combate por turnos: Luchar, Actuar, Objeto, Perdonar y Huir.
+- Guardado local en el navegador del dispositivo.
 
-Consulta [la guía de inicio](PetalosDeReinicio/README.md), las [fichas de Canva](PetalosDeReinicio/docs/FICHAS_CANVA_ACTO_1.md) y el [plan de los cinco actos](PetalosDeReinicio/docs/PLAN_ACTOS.md).
+## Canva y assets
+El diseño visual se está organizando en Canva. Exporta los recursos originales como PNG y súbelos desde el móvil a GitHub para integrarlos progresivamente en `PetalosDeReinicio/web/assets/`.
 
-> Este es un prototipo técnico del Acto 1. No es todavía el juego completo de cuatro horas y no se ha compilado un APK/AAB en este repositorio.
+## Estado honesto
+Este es un prototipo jugable temprano, no el juego completo de cuatro horas. Los archivos se han guardado en GitHub, pero todavía hace falta abrirlo en Chrome Android y probar cada flujo; aún no se ha publicado con GitHub Pages ni generado una APK nativa. El guardado actual es local a un navegador y no sincroniza entre dispositivos.
+
+La carpeta de Godot queda como material heredado de la primera iteración; el desarrollo nuevo prioriza la versión web.
