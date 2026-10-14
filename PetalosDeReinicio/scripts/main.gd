@@ -3,8 +3,8 @@ extends Node2D
 const PlayerScene = preload("res://scenes/player.tscn")
 const StateScript = preload("res://scripts/game_state.gd")
 
-var state: Node
-var player: CharacterBody2D
+var state
+var player
 var ui: CanvasLayer
 var status_label: Label
 var message_label: Label
@@ -72,7 +72,7 @@ func _draw_flower(p: Vector2) -> void:
     draw_line(p + Vector2(0, 8), p + Vector2(0, 31), Color("#708c61"), 3.0)
 
 func _draw_npc(p: Vector2, tint: Color, tag: String) -> void:
-    draw_ellipse(p + Vector2(0, 28), Vector2(21, 7), Color(0, 0, 0, 0.25))
+    draw_circle(p + Vector2(0, 28), 19, Color(0, 0, 0, 0.18))
     draw_rect(Rect2(p + Vector2(-15, -7), Vector2(30, 37)), tint)
     draw_circle(p + Vector2(0, -22), 16, Color("#e8c9a8"))
     draw_circle(p + Vector2(-5, -23), 2, Color("#202331"))
