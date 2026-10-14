@@ -1,28 +1,24 @@
-# Pétalos de Reinicio — versión web
-RPG narrativo por turnos de Sauce Solitario, preparado para desarrollarse desde un teléfono.
+# Pétalos de Reinicio — prototipo web del Acto I
+RPG narrativo por turnos de Sauce Solitario. Usa HTML, CSS y JavaScript nativos; no requiere Godot.
 
-## Abrir el prototipo
-Abre `index.html` en un navegador moderno. Para publicar la versión web gratis, configura GitHub Pages para servir la carpeta `PetalosDeReinicio/web` desde la rama `petalos-reinicio`, o copia su contenido a la raíz de una rama de publicación.
+## Abrir
+Abre `index.html` en un navegador moderno o publica la carpeta mediante GitHub Pages.
 
 ## Controles
-- Android: toca los botones direccionales o el mapa y pulsa **Interactuar**.
-- PC: WASD o flechas para moverte, E/Enter para interactuar.
-- El botón Guardar almacena el progreso en el almacenamiento local del navegador.
+- Android: usa el pad táctil o toca un punto del mapa; pulsa **Interactuar**.
+- PC: WASD o flechas para moverte; E/Enter para interactuar.
+- **Guardar** almacena el progreso en el navegador del dispositivo. No sincroniza entre dispositivos.
 
-## Incluye ahora
-- Menú principal y título.
-- Mapa exploratorio generado en Canvas 2D.
-- Vera, Tic, una flor coleccionable y encuentro con Lenteja.
-- Combate por turnos: Luchar, Actuar, Objeto, Perdonar y Huir.
-- Inventario básico, estado de salud, decisiones y guardado local.
-- Diseño adaptable a móvil y escritorio, sin librerías ni compilación.
+## Contenido implementado en código
+- Menú principal, continuar y ajustes informativos.
+- Exploración con Nilo, cuatro áreas visuales, NPC y puntos de interacción.
+- Tic, Vera, tres pétalos y apertura del Arco de las Raíces.
+- Combate por turnos con Lenteja y Raíz Hueca: Luchar, Actuar, Objeto, Perdonar y Huir.
+- Inventario, PV, registro de misión, decisiones y cierre con variaciones de ruta.
+- Diseño adaptable a móvil y escritorio.
 
-## Próximos pasos
-1. Probar el juego en Chrome Android y corregir errores encontrados.
-2. Completar diálogos y la estructura del Acto 1.
-3. Incorporar assets originales diseñados en Canva (exportar PNG con fondo transparente cuando corresponda).
-4. Añadir audio, guardado versionado, accesibilidad y pruebas automatizadas.
-5. Publicar con GitHub Pages; la APK nativa es una etapa posterior opcional.
+## Arte
+Los gráficos actuales son placeholders dibujados en Canvas. La carpeta Canva y las fichas visuales están preparadas, pero la generación automática de imágenes de Canva alcanzó el límite de créditos. Los assets originales aún deben crearse/exportarse y subirse a `assets/`.
 
-## Nota de calidad
-Este prototipo se escribió como HTML/CSS/JavaScript autónomo y no requiere Godot. La creación del archivo en GitHub no sustituye una prueba real en un navegador Android; revisa el flujo en el teléfono antes de considerarlo estable.
+## Estado de calidad
+El código se guardó en GitHub, pero todavía debe probarse en Chrome Android y corregirse cualquier problema encontrado. No se ha confirmado una publicación en Pages ni existe APK nativa.
